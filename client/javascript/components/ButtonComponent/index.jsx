@@ -1,4 +1,5 @@
-import React, {Component} from 'react'
+import React, {Component} from 'react';
+import './index.style';
 
 export default class ButtonComponent extends Component {
   render() {
