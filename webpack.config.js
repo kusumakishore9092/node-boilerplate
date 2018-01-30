@@ -6,7 +6,8 @@ module.exports = {
   devtool: 'inline-source-map',
 
   entry: [
-    path.resolve(__dirname, 'client/javascript/index.js')
+    path.resolve(__dirname, 'client/javascript/index.js'),
+    path.resolve(__dirname, 'client/styles/main.scss')
   ],
 
   output: {
@@ -24,21 +25,21 @@ module.exports = {
   module: {
     rules: [
       {
-          test: /.jsx?$/,
-          loader: 'babel-loader',
-          query: {
-              presets: ['es2015', 'react']
-          }
+        test: /.jsx?$/,
+        loader: 'babel-loader',
+        query: {
+          presets: ['es2015', 'react']
+        }
       },
       {
-          test: /\.css$/,
-          include: [
-            path.resolve(__dirname, 'client')
-          ],
-          use: ExtractTextPlugin.extract({
-            fallback: 'style-loader',
-            use: ['css-loader', 'postcss-loader']
-          }),
+        test: /\.css$/,
+        include: [
+          path.resolve(__dirname, 'client')
+        ],
+        use: ExtractTextPlugin.extract({
+          fallback: 'style-loader',
+          use: ['css-loader', 'postcss-loader']
+        }),
       },
       {
         test: /\.scss$/,

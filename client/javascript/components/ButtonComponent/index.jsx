@@ -4,7 +4,7 @@ import './index.style';
 export default class ButtonComponent extends Component {
   render() {
     return(
-        <button>I am a button</button>
+        <button class='btn btn-primary'>I am a button</button>
       )
     }
 }

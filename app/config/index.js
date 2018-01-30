@@ -1,3 +1,4 @@
+'use strict';
 class BaseConfig {
   constructor() {
     this.db = {
