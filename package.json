@@ -22,9 +22,13 @@
   "dependencies": {
     "bootstrap": "^4.0.0",
     "express": "^4.16.2",
+    "history": "^4.7.2",
     "mongodb": "^3.0.1",
     "react": "^16.2.0",
-    "react-dom": "^16.2.0"
+    "react-dom": "^16.2.0",
+    "react-redux": "^5.0.6",
+    "react-router-redux": "^5.0.0-alpha.9",
+    "redux": "^3.7.2"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
