@@ -4,8 +4,7 @@ import { Provider } from 'react-redux';
 import { createStore, applyMiddleware, compose } from 'redux';
 import { routerMiddleware, ConnectedRouter } from 'react-router-redux';
 import createHistory from 'history/createBrowserHistory';
-
-import ButtonComponent from 'client/javascript/components/ButtonComponent';
+import App from 'client/javascript/components/App';
 import reducers from './reducers'
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
@@ -16,7 +15,7 @@ const store = createStore(reducers, composeEnhancers(middlewares));
 ReactDOM.render(
   <Provider store={store}>
     <ConnectedRouter history={history}>
-      <ButtonComponent/>
+      <App/>
     </ConnectedRouter>
   </Provider>,
   document.getElementById('root')
