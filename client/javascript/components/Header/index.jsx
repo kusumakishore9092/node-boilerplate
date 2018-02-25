@@ -1,6 +1,4 @@
 import React, {Component} from 'react';
-import Button from 'client/javascript/components/Button';
-import Footer from 'client/javascript/components/Footer';
 import './index.style';
 
 export default class Header extends Component {

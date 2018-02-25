@@ -4,8 +4,8 @@ import './index.style';
 export default class Footer extends Component {
   render() {
     return(
-      <div class="footer">
-        <div class="wrapper">
+      <div className="footer">
+        <div className="wrapper">
           <p>This is a footer</p>
         </div>
       </div>

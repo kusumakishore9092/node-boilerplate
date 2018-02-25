@@ -19,7 +19,8 @@ module.exports = {
     extensions: ['.js', '.jsx', '.css', '.scss', '.sass'],
     alias: {
       app: path.resolve(__dirname, 'app'),
-      client: path.resolve(__dirname, 'client')
+      client: path.resolve(__dirname, 'client'),
+      tests: path.resolve(__dirname, 'tests')
     }
   },
   module: {

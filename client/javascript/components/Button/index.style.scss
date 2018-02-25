@@ -1,12 +1,14 @@
 .wrapper {
-  .btn-primary {
+  .primary-button {
     margin-top: 2rem;
     color: white;
     background-color: teal;
     border-color: teal;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
   }
 
-  .btn-primary:hover {
+  .primary-button:hover {
     color: teal;
     background-color: white;
     border-color: teal;
